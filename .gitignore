@@ -1,7 +1,7 @@
 *.pyc
 *.npy
 *.npz
-*.pth
+# *.pth
 *.json
 *.log
 
