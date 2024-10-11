@@ -10,7 +10,6 @@ from tqdm import tqdm
 from vocal_remover.lib import dataset
 from vocal_remover.lib import nets
 from vocal_remover.lib import spec_utils
-from vocal_remover.lib import utils
 
 
 class Separator(object):
@@ -180,6 +179,8 @@ def main():
     sf.write('{}{}_Vocals.wav'.format(output_dir, basename), wave.T, sr)
 
     if args.output_image:
+        from vocal_remover.lib import utils
+
         image = spec_utils.spectrogram_to_image(y_spec)
         utils.imwrite('{}{}_Instruments.jpg'.format(output_dir, basename), image)
 
