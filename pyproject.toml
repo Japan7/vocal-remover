@@ -5,12 +5,12 @@ description = "Vocal Remover using Deep Neural Networks"
 readme = "README.md"
 license = "MIT"
 authors = [{ name = "tsurumeso", email = "tsurumeso@gmail.com" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = ["librosa>=0.10.0,<1", "numpy>=1.26.4,<2", "tqdm>=4.66.0,<5"]
 
 [project.optional-dependencies]
 plot = ["matplotlib>=3.8.0,<4", "opencv_python>=4.8.0,<5"]
-torch = ["torch>=2.1.0,<3"]
+torch = ["torch>=2.1.0,<3", "transformers>=5.5.3,<6"]
 
 [project.urls]
 homepage = "https://github.com/tsurumeso/vocal-remover"
