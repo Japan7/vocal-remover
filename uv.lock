@@ -1850,7 +1850,7 @@ torch = [
 requires-dist = [
     { name = "librosa", specifier = ">=0.10.0,<1" },
     { name = "matplotlib", marker = "extra == 'plot'", specifier = ">=3.8.0,<4" },
-    { name = "numpy", specifier = ">=1.26.4,<2" },
+    { name = "numpy", specifier = ">=1.26.4,<3" },
     { name = "opencv-python", marker = "extra == 'plot'", specifier = ">=4.8.0,<5" },
     { name = "torch", marker = "extra == 'torch'", specifier = ">=2.1.0,<3" },
     { name = "tqdm", specifier = ">=4.66.0,<5" },
